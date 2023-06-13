@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Notifications page</title>
+
+</head>
+<body>
+  <main id="main">
+    <header>
+      <div class="notification-div">
+        <h1>Notifications <span id="notifications-number">3</span></h1>
+        <button id="mark-read">Mark all as read</button>
+      </div>
+    </header>
+
+    <div class="notification-rows">
+      <div class="row unread unread-1">
+        <div class="user-avatar-container">
+          <img src="./assets/images/avatar-mark-webber.webp" alt="avatar mark webber" class="user-avatar">
+        </div>
+        <div class="text-content-container">
+          <div class="text-content">
+            <p class="text-p">
+              <span class="user-name"><a href="#" class="user-name">Mark Webber</a></span> reacted to your recent post <a href="#" class="post">My first tournament today!</a><div class="notification-unread-icon unread-notif-1"></div>
+            </p>
+            
+          </div>
+          <div class="time">
+            <p class="time">1m ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row unread unread-2">
+        <div class="user-avatar-container">
+          <img src="./assets/images/avatar-angela-gray.webp" alt="avatar Angela Gray" class="user-avatar">
+        </div>
+        <div class="text-content-container">
+          <div  class="text-content">
+            <p class="text-p">
+              <span class="user-name"><a href="#" class="user-name">Angela Gray</a></span> followed you<div class="notification-unread-icon unread-notif-2"></div>
+            </p>
+            
+          </div>
+          <div class="time">
+            <p class="time">5m ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row unread unread-3">
+        <div class="user-avatar-container">
+          <img src="./assets/images/avatar-jacob-thompson.webp" alt="avatar Jacob Thompson" class="user-avatar">
+        </div>
+        <div class="text-content-container">
+          <div class="text-content">
+            
+            <p class="text-p">
+              <span class="user-name"><a href="#" class="user-name">Jacob Thompson</a></span> has joined your group <a href="#" class="chess-club">Chess Club</a><div class="notification-unread-icon unread-notif-3"></div>
+            </p>
+          </div>
+          <div class="time">
+            <p class="time">1 day ago</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row read msg-row">
+        <div class="row-content">
+          <div class="user-avatar-container">
+            <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="avatar Rizky Hasanuddin" class="user-avatar">
+          </div>
+
+          <div class="text-content-container">
+            <div class="text-content">
+              <p class="text-p">
+                <span class="user-name rizky"><a href="#" class="user-name">Rizky Hasanuddin</a></span> sent you a private message
+              </p>
+            </div>
+            <div class="time">
+              <p class="time">5 days ago</p>
+            </div>
+          </div>
+
+        </div>
+          <div class="message-container">
+            <p class="message">
+              Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+              I'm already having lots of fun and improving my game.
+            </p>
+          </div>
+      </div>
+
+
+      <div class="row read">
+        <div class="user-avatar-container">
+          <img src="./assets/images/avatar-kimberly-smith.webp" alt="avatar Kimberly Smith" class="user-avatar">
+        </div>
+        <div class="text-content-container">
+          <div class="text-content">
+            <p class="text-p kimberly-p">
+              <span class="user-name"><a href="#" class="user-name">Kimberly Smith</a></span> commented on your picture
+            </p>
+            <img src="./assets/images/image-chess.webp" alt="chess picture" class="chess-picture">
+          </div>
+          <div class="time">
+            <p class="time">1 week ago</p>
+          </div> 
+        </div>
+      </div>
+
+
+      <div class="row read">
+        <div class="user-avatar-container">
+          <img src="./assets/images/avatar-nathan-peterson.webp" alt="avatar Nathan Peterson" class="user-avatar">
+        </div>
+        <div class="text-content-container">
+          <div class="text-content nathan-text">
+            <p class="text-p nathan-p">
+              <span class="user-name nathan-user"><a href="#" class="user-name">Nathan Peterson</a></span>
+              reacted to your recent post <a href="#" class="post clicked-post">5 end-game strategies to increase your win rate</a>
+            </p>
+          </div>
+          <div class="time nathan-time">
+            <p class="time nathan-time">2 weeks ago</p>
+          </div>
+        </div>
+
+      </div>
+
+        
+
+      <div class="row read">
+        <div class="user-avatar-container">
+          <img src="./assets/images/avatar-anna-kim.webp" alt="avatar Anna Kim" class="user-avatar">
+        </div>
+        <div class="text-content-container">
+          <div class="text-content">
+            <p class="text-p">
+              <span class="user-name"><a href="#" class="user-name">Anna Kim</a></span> left the group <a href="#" class="chess-club checked-post">Chess Club</a>
+            </p>
+          </div>
+          <div class="time">
+            <p class="time">2 weeks ago</p>
+          </div>
+        </div>
+      </div> 
+
+
+
+
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Safa Al-Hilo</a>.
+    </div>
+  </footer>
+  
+  <script src="app.js"></script>
+
+</body>
+
+</html>
+
+

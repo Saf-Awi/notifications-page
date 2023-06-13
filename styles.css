@@ -1,0 +1,274 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+:root {
+    --clr-primary-Red: hsl(1, 90%, 64%);
+    --clr-primary-Blue: hsl(219, 85%, 26%);
+    --clr-neutral-White: hsl(0, 0%, 100%);
+    --clr-neutral-Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --clr-neutral-Light-grayish-blue-1: hsl(211, 68%, 94%);
+    --clr-neutral-Light-grayish-blue-2: hsl(205, 33%, 90%);
+    --clr-neutral-Grayish-blue: hsl(219, 14%, 63%);
+    --clr-neutral-Dark-grayish-blue: hsl(219, 12%, 42%);
+    --clr-neutral-Very-dark-blue: hsl(224, 21%, 14%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap'); 
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: var(--clr-neutral-Very-light-grayish-blue);
+    color: var(--clr-neutral-Grayish-blue);
+}
+
+main {
+    background-color: var(--clr-neutral-White);
+    border-radius: 10px;
+    padding: 10px;
+   
+}
+
+/*------header content-----*/
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 0 20px;
+    color: var(--clr-neutral-Very-dark-blue);
+}
+.notification-rows {
+    width: 600px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.notification-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 230px;
+}
+
+#mark-read {
+    color: var(--clr-neutral-Grayish-blue);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#notifications-number {
+    color: var(--clr-neutral-White);
+    padding: 0 13px;
+    background-color: var(--clr-primary-Blue);
+    border-radius: 4px;
+    
+}
+
+
+
+h1 {
+    margin: 0;
+}
+
+/*------rows content-----*/
+
+
+.row {
+    display: flex;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding-left: 10px;
+    
+    
+    
+}
+
+.text-content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.text-content {
+    display: flex;
+    flex: row;
+}
+
+.notification-unread-icon {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--clr-primary-Red);
+    position: relative;
+    top: 17px;
+    margin-left: 3px;
+}
+
+.unread {
+    background-color: var(--clr-neutral-Very-light-grayish-blue);
+
+}
+
+.user-avatar, .chess-picture {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.chess-picture {
+    position: absolute;
+    right: 390px;
+    cursor: pointer;
+}
+
+
+.user-name {
+    color: var(--clr-neutral-Very-dark-blue);
+    font-weight: 700;
+    margin-right: 2px;
+   
+}
+
+.user-name, .post {
+    text-decoration: none;
+}
+
+.user-name:visited, .post:visited {
+    color: inherit;
+}
+
+
+.post {
+    color: var(--clr-primary-Blue);
+    font-weight: 700;
+}
+
+.msg-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-content {
+    display: flex;
+}
+
+.time {
+    color: var(--clr-neutral-Grayish-blue);
+    position: relative;
+    bottom: 14px;
+    margin-top: 10px;
+}
+
+.nathan-user {
+    font-weight: 700;
+    top: 2px;
+}
+
+.nathan-time {
+    bottom: 10px;
+}
+
+.text-content {
+    vertical-align: center;
+}
+
+.message-container {
+    width: 420px;
+    margin-left: 60px;
+    border: 1px solid var(--clr-neutral-Light-grayish-blue-2);
+    border-radius: 6px;
+    padding: 10px 30px;
+    position: relative;
+    bottom: 20px;
+}
+
+.message-container:hover {
+    background-color: var(--clr-neutral-Light-grayish-blue-2);
+    cursor: pointer;
+}
+
+.chess-club {
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--clr-primary-Blue);
+}
+
+.chess-club:visited {
+    color: var(--clr-primary-Blue);
+}
+
+/*------Mobile view-----*/
+
+@media screen and (max-width: 768px){
+    body {
+        width: 350px;
+    }
+
+    .notification-div {
+       position: absolute;
+       gap: 70px;
+       margin-bottom: 40px;
+    }
+
+    .row {
+        width: 350px;
+        
+    }
+
+    .notification-rows {
+        width: 350px;
+        margin-left: 40px;
+       
+    }
+
+    .user-name {
+        display: inline;
+        
+    }
+
+    .message-container {
+        width: 260px;
+        padding: 10px;
+    }
+
+    .chess-picture {
+        position: relative;
+        left: 10px;
+        top: 10px;
+    }
+
+    .kimberly-p {
+        width: 200px;
+    }
+    
+    .time {
+        margin-top: 10px;
+    }
+
+    .notification-unread-icon {
+        position: relative;
+        
+    }
+
+    .unread-notif-1 {
+        top: 33px;
+        right: 110px;
+        
+    }
+
+    .unread-notif-3 {
+        top: 33px;
+        right: 207px;
+    }
+
+}
